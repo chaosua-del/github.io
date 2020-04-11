@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/ralewaythin.woff2') format('woff2'), url('ralewaythin.woff') format('woff'), url('../fonts/raleway/ralewaythin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/ralewaysemibold.woff2') format('woff2'), url('ralewaysemibold.woff') format('woff'), url('../fonts/raleway/ralewaysemibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/ralewaybold.woff2') format('woff2'), url('ralewaybold.woff') format('woff'), url('../fonts/raleway/ralewaybold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/ralewayextrabold.woff2') format('woff2'), url('ralewayextrabold.woff') format('woff'), url('../fonts/raleway/ralewayextrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face { font-family: 'MullerLight';  src: local('MullerLight'), url('../fonts/MullerLight/MullerLight.woff') format('woff'); }
+
