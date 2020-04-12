@@ -1,4 +1,7 @@
 @media screen and ( max-width: 1200px )
+  .header
+    margin-bottom: 50px !important
+
   .hero
     &::after
       min-height: 700px !important
@@ -10,7 +13,11 @@
       left: 90% !important
 
    
-@media screen and ( max-width: 992px )
+@media screen and ( max-width: 992px )  
+
+  .header
+    margin-bottom: 0 !important
+
   .hero
     &::after
       min-height: 582px !important
@@ -24,5 +31,80 @@
       bottom: -17% !important
     &__contacts
       bottom: 45% !important
+
+@media screen and ( max-width: 768px )
+  html
+    font-size: 16px !important
+
+  .header
+    background: url('../img/header/hero-bg-768.jpg') no-repeat center / cover
+    min-height: 660px !important
+    &::after
+      content: url('../img/header/header-logo-320.png') 
+      position: absolute
+      right: 0 
+      top: 5%
+    &__logo
+      display: none
+    &__phone
+      display: none
+    &__navbar
+      padding-left: 1rem !important
+      padding-right: 1rem !important
+
+  .hero
+    &::after
+      min-height: 100% !important
+      width: 100% !important
+      background: rgba(#112537, 0.88) !important
+    &__carousel
+      display: none
+    &__content
+      text-align: center !important
+      max-width: 100% !important
+      top: 7% !important
+      left: 50% !important
+      transform: translateX(-50%) !important
+    &__title
+      font-size: 5.25rem !important
+      line-height: 90px  !important
+      max-width: 100% !important
+    &__contacts
+      display: none 
+    &__button
+      position: relative
+      span
+        &::after
+          content: url('../img/header/hero__arrow-down.png') !important
+          position: absolute 
+          bottom: -114px
+          right: 50%
+          transform: translateX(10px)
+
+  // features
+  .features
+    &__row
+      div
+        &:nth-child(even)
+          margin-top: 100px  !important
+
+@media screen and ( max-width: 576px )
+  .hero
+    &__title
+      font-size: 3rem !important
+      line-height: 48.19px !important
+    &__container
+      padding-left: 50px
+      padding-right: 50px
+
+  // features
+  .features
+    &__row
+      div
+        &:nth-child(even)
+          margin-top: 0 !important  
+  
+
+    
 
   

@@ -2,6 +2,7 @@
   height: 100vh
   max-height: 770px
   position: relative
+  margin-bottom: 150px
   &__mask
     // position: absolute
     // width: 50%
@@ -95,7 +96,9 @@
     background-color: #f8a25a
     color: #ffffff
     span
-      margin-right: 20px
+      &::after
+        content: url('../img/header/hero__button-arrow.png')
+        margin-left: 20px
   &__contacts
     position: absolute
     bottom: 19%

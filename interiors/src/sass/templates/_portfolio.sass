@@ -1,0 +1,95 @@
+.portfolio
+  margin-top: 100px
+  &__title
+    color: #00203a
+    font-family: "Playfair Display"
+    font-size: 3.21rem
+    font-weight: 700
+    letter-spacing: 0.32px
+  &__swiper
+    &-slide
+      max-width: 258px
+      position: relative
+      &--add
+        min-width: 392px
+    &-button-next
+      right: 3%
+      top: 37%
+      &::after
+        content: url('../img/portfolio/slide-arrow-next.png')
+        width: 38px
+        height: 12px  
+    &-button-prev
+      left: 3%
+      top: 37%
+      &::after
+        content: url('../img/portfolio/slide-arrow-prev.png')
+        width: 38px
+        height: 12px
+  &__menu
+    &-item
+      text-decoration: none
+      color: #807f7f
+      font-size: 1.285rem
+      font-family: 'Raleway'
+      font-weight: 700
+      position: relative
+      transition: all 0.3s ease
+      &::after
+        content: ''
+        height: 1px
+        width: 100%
+        position: absolute
+        bottom: -10px
+        left: 0
+        background-color: #00203a
+        opacity: 0
+        transition: all 0.3s ease
+      &:hover
+        font-weight: 700
+        color: #00203a
+        text-decoration: none
+        &::after
+          opacity: 1
+
+    
+        
+
+.slide-mask
+  position: absolute
+  width: 100%
+  height: 100%
+  background: url('../img/portfolio/slide-mask-bg.png')
+  top: 0
+  left: 0
+  transition: opacity 0.3s ease
+  &:hover
+    opacity: 0
+  &__header
+    font-size: 1.143rem
+    color: #ffffff
+    font-family: "Raleway"
+    font-weight: 600
+    letter-spacing: 0.57px
+    margin-left: 26px
+    margin-top: 32px
+  &::after
+    content: 'Дизайн интерьера'
+    position: absolute
+    left: -20%
+    bottom: 17%
+    transform: rotate(270deg)
+    color: #ffffff
+    font-family: "Raleway"
+    font-size: 1.2rem
+    font-weight: 400
+    letter-spacing: 1.28px
+
+.slide-add-button
+  background: transparent
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  opacity: 0
+  transition: opacity 0.2s ease

@@ -10,9 +10,12 @@
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
+
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
   <link rel="stylesheet" href="css/style.css">
 
@@ -66,7 +69,7 @@
     <!-- /.container -->
 
     <div class="hero">
-      <div class="container hero__container">
+      <div class="container-md hero__container">
 
         <div id="carouselExampleIndicators" class="carousel slide hero__bg hero__carousel" data-ride="carousel">
           <ol class="carousel-indicators hero__carousel-indicators">
@@ -89,13 +92,12 @@
 
 
         <div class="hero__content">
-          <h1 class="hero__title">Дизайн
+          <h1 class="hero__title">Дизайн <br>
             интерьеров</h1>
 
           <p class="hero__description">Воплотим в жизнь интерьер, который будет радовать лаконичностью и уютом.</p>
 
-          <button class="hero__button"><span>ЗАКАЗАТЬ ДИЗАЙН</span><img src="img/header/hero__button-arrow.png"
-              alt="arrow"></button>
+          <button class="hero__button"><span>ЗАКАЗАТЬ ДИЗАЙН</span></button>
         </div>
 
         <div class="hero__contacts">
@@ -112,7 +114,138 @@
   </header>
   <!-- /.header -->
 
+  <section class="section features">
+    <div class="container">
+      <div class="row features__row">
+
+        <div class="col-lg-3 col-sm-6 col-10 mx-auto">
+          <div class="features__card">
+            <strong class="features__card-number">01</strong>
+            <h3 class="features__card-header">Берем весь ремонт на себя</h3>
+            <p class="features__card-text">Заботы по дизайну и отделке помещения возьмем на себя, останется дождаться
+              завершения работ и наслаждаться результатом</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-10 mx-auto">
+          <div class="features__card">
+            <strong class="features__card-number">02</strong>
+            <h3 class="features__card-header">Мы - профессионалы своего дела</h3>
+            <p class="features__card-text">Наши дизайнеры постоянно повышают квалификацию, посещеют курсы и тренинги а
+              студия уже реализовала свыше 1000
+              дизайн-проектов</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-10 mx-auto">
+          <div class="features__card">
+            <strong class="features__card-number">03</strong>
+            <h3 class="features__card-header">Наши проекты
+              индивидуальны</h3>
+            <p class="features__card-text">Каждый, созданный студией, интерьер - индивидуальное и максимально
+              продуманное решение для каждого вида помещения</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-10 mx-auto">
+          <div class="features__card">
+            <strong class="features__card-number">04</strong>
+            <h3 class="features__card-header">Рабатаем на выгодных
+              условиях</h3>
+            <p class="features__card-text">Наши дизайнеры постоянно повышают квалификацию, посещеют курсы и тренинги а
+              студия уже реализовала свыше 1000
+              дизайн-проектов</p>
+          </div>
+        </div>
+
+      </div>
+      <!-- ./row -->
+    </div>
+    <!-- ./container -->
+  </section>
+
+  <section class="portfolio">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-12 mb-5">
+          <h2 class="portfolio__title">Портфолио</h2>
+        </div>
+
+        <div class="col-12 mb-5 portfolio__menu">
+          <a href="#" class="portfolio__menu-item mr-4">Все проекты</a>
+          <a href="#" class="portfolio__menu-item mr-4">Дизайн интерьеров</a>
+          <a href="#" class="portfolio__menu-item">Отделочные работы</a>
+        </div>
+
+        <div class="col-12">
+
+          <div class="swiper-container portfolio__swiper-container">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide portfolio__swiper-slide">
+                <img src="img/portfolio/portfolio-design1.jpg" alt="1">
+                <div class="slide-mask">
+                  <h3 class="slide-mask__header">Дизайн интерьера <br>
+                    гостиной</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide portfolio__swiper-slide portfolio__swiper-slide--add">
+                <img src="img/portfolio/protfolio-add-design.png" alt="2">
+                <a href="#" class="slide-add-button"><img src="img/portfolio/slide-add-button.png" alt="button"></a>
+              </div>
+
+              <div class="swiper-slide portfolio__swiper-slide">
+                <img src="img/portfolio/portfolio-design2.jpg" alt="3">
+                <div class="slide-mask">
+                  <h3 class="slide-mask__header">Дизайн столовой <br>
+                    в стиле «Бохо»</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide portfolio__swiper-slide">
+                <img src="img/portfolio/portfolio-design2.jpg" alt="3">
+                <div class="slide-mask">
+                  <h3 class="slide-mask__header">Дизайн столовой <br>
+                    в стиле «Бохо»</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide portfolio__swiper-slide">
+                <img src="img/portfolio/portfolio-design2.jpg" alt="3">
+                <div class="slide-mask">
+                  <h3 class="slide-mask__header">Дизайн столовой <br>
+                    в стиле «Бохо»</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide portfolio__swiper-slide">
+                <img src="img/portfolio/portfolio-design3.jpg" alt="4">
+                <div class="slide-mask">
+                  <h3 class="slide-mask__header">Лофт интерьера <br>
+                    для отеля Hiloft</h3>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="portfolio__swiper-button-next swiper-button-next"></div>
+            <div class="portfolio__swiper-button-prev swiper-button-prev"></div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.portfolio -->
+
   <script src="js/jquery.min.js"></script>
+
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 
   <!-- bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -121,6 +254,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
