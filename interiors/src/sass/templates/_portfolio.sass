@@ -10,8 +10,14 @@
     &-slide
       max-width: 258px
       position: relative
-      &--add
-        min-width: 392px
+      min-height: 552px
+      transition: all 0.1s ease-in-out
+      img
+        height: 100%
+      &:hover
+        max-width: 392px
+     
+        
     &-button-next
       right: 3%
       top: 37%
@@ -62,9 +68,12 @@
   background: url('../img/portfolio/slide-mask-bg.png')
   top: 0
   left: 0
-  transition: opacity 0.3s ease
+  transition: all 0.3s ease
+  display: block
   &:hover
     opacity: 0
+  &:hover ~ .slide-add-button
+    display: block
   &__header
     font-size: 1.143rem
     color: #ffffff
@@ -91,5 +100,5 @@
   top: 50%
   left: 50%
   transform: translate(-50%, -50%)
-  opacity: 0
-  transition: opacity 0.2s ease
+  display: none
+  z-index: 1

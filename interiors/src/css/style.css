@@ -16,6 +16,9 @@
   .hero__carousel-indicators {
     left: 90% !important;
   }
+  .portfolio__swiper-slide {
+    min-width: 50%;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -116,6 +119,12 @@
   }
   .features__row div:nth-child(even) {
     margin-top: 0 !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .portfolio__swiper-slide {
+    min-width: 100%;
   }
 }
 
@@ -354,10 +363,17 @@ button {
 .portfolio__swiper-slide {
   max-width: 258px;
   position: relative;
+  min-height: 552px;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
-.portfolio__swiper-slide--add {
-  min-width: 392px;
+.portfolio__swiper-slide img {
+  height: 100%;
+}
+
+.portfolio__swiper-slide:hover {
+  max-width: 392px;
 }
 
 .portfolio__swiper-button-next {
@@ -423,12 +439,17 @@ button {
   background: url("../img/portfolio/slide-mask-bg.png");
   top: 0;
   left: 0;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: block;
 }
 
 .slide-mask:hover {
   opacity: 0;
+}
+
+.slide-mask:hover ~ .slide-add-button {
+  display: block;
 }
 
 .slide-mask__header {
@@ -462,8 +483,7 @@ button {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  opacity: 0;
-  -webkit-transition: opacity 0.2s ease;
-  transition: opacity 0.2s ease;
+  display: none;
+  z-index: 1;
 }
 /*# sourceMappingURL=style.css.map */

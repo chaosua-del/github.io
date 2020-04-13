@@ -12,7 +12,11 @@
     &__carousel-indicators
       left: 90% !important
 
-   
+  .portfolio
+    &__swiper
+      &-slide
+        min-width: 50%
+
 @media screen and ( max-width: 992px )  
 
   .header
@@ -88,6 +92,7 @@
         &:nth-child(even)
           margin-top: 100px  !important
 
+
 @media screen and ( max-width: 576px )
   .hero
     &__title
@@ -103,7 +108,14 @@
       div
         &:nth-child(even)
           margin-top: 0 !important  
+
+@media screen and ( max-width: 420px )
+  .portfolio
+    &__swiper
+      &-slide
+        min-width: 100%
   
+ 
 
     
 
