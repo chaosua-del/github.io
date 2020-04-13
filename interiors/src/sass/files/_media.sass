@@ -36,6 +36,16 @@
     &__contacts
       bottom: 45% !important
 
+  // services
+  .services
+    &__content
+      &-quantity
+        position: absolute
+        top: -190px
+    &__menu
+      &-item
+        flex-basis: 50%
+
 @media screen and ( max-width: 768px )
   html
     font-size: 16px !important
@@ -92,6 +102,25 @@
         &:nth-child(even)
           margin-top: 100px  !important
 
+  
+@media screen and ( max-width: 767px )
+  .services
+    overflow: hidden
+    &__img
+      height: 400px
+      position: relative
+      img
+        position: absolute
+        top: 0
+        left: 50%
+        transform: translateX(-50%)
+        height: 100%
+        min-width: 768px
+    &__content
+      &-quantity
+        top: -250px  
+    
+
 
 @media screen and ( max-width: 576px )
   .hero
@@ -109,11 +138,37 @@
         &:nth-child(even)
           margin-top: 0 !important  
 
+  // services
+  .services
+    &__content
+      &-quantity
+        position: static
+        margin-bottom: 1rem
+
 @media screen and ( max-width: 420px )
   .portfolio
     &__swiper
       &-slide
         min-width: 100%
+
+@media screen and ( min-width: 992px )
+  // hovers
+  .services
+    &__content
+      &-button
+        transition: all 0.2s ease
+        &:hover
+          border: 1px solid #f8a25a
+          background: #f8a25a
+          color: #ffffff
+    &__menu
+      &-item
+        &:hover
+          font-weight: 700
+          color: #00203a
+          text-decoration: none
+          transform: translateX(30px)
+  
   
  
 

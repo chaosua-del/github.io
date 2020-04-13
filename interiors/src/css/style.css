@@ -42,6 +42,14 @@
   .hero__contacts {
     bottom: 45% !important;
   }
+  .services__content-quantity {
+    position: absolute;
+    top: -190px;
+  }
+  .services__menu-item {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -108,6 +116,28 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .services {
+    overflow: hidden;
+  }
+  .services__img {
+    height: 400px;
+    position: relative;
+  }
+  .services__img img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    height: 100%;
+    min-width: 768px;
+  }
+  .services__content-quantity {
+    top: -250px;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .hero__title {
     font-size: 3rem !important;
@@ -120,11 +150,34 @@
   .features__row div:nth-child(even) {
     margin-top: 0 !important;
   }
+  .services__content-quantity {
+    position: static;
+    margin-bottom: 1rem;
+  }
 }
 
 @media screen and (max-width: 420px) {
   .portfolio__swiper-slide {
     min-width: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .services__content-button {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  .services__content-button:hover {
+    border: 1px solid #f8a25a;
+    background: #f8a25a;
+    color: #ffffff;
+  }
+  .services__menu-item:hover {
+    font-weight: 700;
+    color: #00203a;
+    text-decoration: none;
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
   }
 }
 
@@ -176,6 +229,14 @@ h1, h2, h3, h4, h5 {
 button {
   border: none;
   outline: none;
+}
+
+.title {
+  color: #00203a;
+  font-family: "Playfair Display";
+  font-size: 3.21rem;
+  font-weight: 700;
+  letter-spacing: 0.32px;
 }
 
 .header {
@@ -352,14 +413,6 @@ button {
   margin-top: 100px;
 }
 
-.portfolio__title {
-  color: #00203a;
-  font-family: "Playfair Display";
-  font-size: 3.21rem;
-  font-weight: 700;
-  letter-spacing: 0.32px;
-}
-
 .portfolio__swiper-slide {
   max-width: 258px;
   position: relative;
@@ -485,5 +538,50 @@ button {
           transform: translate(-50%, -50%);
   display: none;
   z-index: 1;
+}
+
+.services__menu-item {
+  text-decoration: none;
+  color: #807f7f;
+  font-size: 1.285rem;
+  font-family: 'Raleway';
+  font-weight: 700;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.services__menu-item:hover {
+  text-decoration: none;
+  font-weight: 700;
+  color: #00203a;
+}
+
+.services__content-header {
+  color: #00203a;
+  font-size: 2.142rem;
+}
+
+.services__content-description {
+  font-size: 1.285rem;
+  font-family: 'Raleway';
+}
+
+.services__content-quantity {
+  font-size: 1.285rem;
+  font-family: 'Raleway';
+  font-weight: 600;
+}
+
+.services__content-button {
+  font-size: 1.07rem;
+  color: #112537;
+  text-transform: uppercase;
+  font-family: 'Raleway';
+  font-weight: 600;
+  background: transparent;
+  border: 1px solid #112537;
+  padding: 15px 40px;
 }
 /*# sourceMappingURL=style.css.map */
