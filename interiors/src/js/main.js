@@ -41,5 +41,24 @@ $('document').ready(function () {
     });
   }
 
+  // video-play
+  // var tag = document.createElement('script');
+  // tag.src = "https://www.youtube.com/iframe_api";
+  var player;
+
+  $('.services__video-play').on('click', function () {
+    player = new YT.Player('player', {
+      height: '100%',
+      width: '100%',
+      videoId: 'GeVQpsbdqRQ',
+      events: {
+        'onReady': onPlayerReady,
+      }
+    });
+  });
+
+  function onPlayerReady(event) {
+    event.target.playVideo();
+  }
 
 });

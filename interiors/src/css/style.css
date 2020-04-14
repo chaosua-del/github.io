@@ -584,4 +584,55 @@ button {
   border: 1px solid #112537;
   padding: 15px 40px;
 }
+
+.services__video {
+  position: relative;
+  min-height: 595px;
+  max-width: 1360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services__video-img {
+  position: relative;
+  width: 1360px;
+  min-height: 595px;
+  background: url("../img/services/video-mask.jpg") no-repeat center/cover;
+}
+
+.services__video-img::after {
+  content: '';
+  background: url("../img/services/video-mask-dimm.jpg") center/cover;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+}
+
+.services__video-play {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background: #f2b47c url("../img/services/video-play.svg") no-repeat 55% 50%;
+}
+
+.services__video-text {
+  font-size: 1.285rem;
+  color: #ffffff;
+  font-family: 'Raleway';
+  font-weight: 400;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
