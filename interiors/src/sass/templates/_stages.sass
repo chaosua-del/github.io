@@ -1,0 +1,52 @@
+.stages
+  margin-top: 150px
+  &__content
+    display: flex
+    // flex-basis: 33%
+    &-numeration
+      position: relative
+      color: #00203a
+      font-size: 0.85rem
+      font-family: 'Raleway'
+      font-weight: 500
+      border: 1px solid rgba(#fde5d1, 0.5)
+      border-radius: 50%
+      background: transparent
+      min-width: 55px
+      min-height: 55px
+      width: 55px
+      height: 55px
+      text-align: center
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-top: -2.4%
+      margin-right: 25px
+      &::before
+        content: ''
+        position: absolute
+        width: 23px
+        height: 23px
+        background: #fde5d1
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        z-index: -1
+        border-radius: 50%
+  &__card
+    max-width: 300px
+    margin-bottom: 60px
+    &-header
+      font-size: 1.57rem
+      color: #313131
+      font-family: 'Raleway'
+      font-weight: 600
+      font-style: normal
+    &-text
+      font-size: 1.143rem
+      color: #5e5e5e
+      font-family: 'Raleway'
+      font-weight: 300
+
+
+
