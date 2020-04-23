@@ -12,6 +12,15 @@ $('document').ready(function () {
     },
   });
 
+  var swiper2 = new Swiper('.feedback__swiper.container', {
+    loop: true,
+    spaceBetween: 30,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+
   // // появление кнопки на слайдере
   // $('.portfolio__swiper-slide--add').mouseover(function () {
   //   $('.slide-add-button').css("opacity", "1");

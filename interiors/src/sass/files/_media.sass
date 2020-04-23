@@ -59,6 +59,24 @@
     &__content
       flex-basis: 50% !important
 
+
+  // dream
+  .dream
+    &__col
+      position: relative
+      display: flex
+      justify-content: center
+      background: #182c3d url('../img/dream/kitchen2.jpg') no-repeat center / cover !important
+    &__img
+      display: none !important
+  
+  .form
+    &__title,
+    &__text, 
+    &__policy-info
+      text-align: center
+
+
 @media screen and ( max-width: 768px )
   html
     font-size: 16px !important
@@ -163,6 +181,11 @@
     &__content
       flex-basis: 80% !important
 
+  // dream
+  .form
+    &__icon
+      display: none !important
+
 @media screen and ( max-width: 420px )
   .portfolio
     &__swiper
@@ -186,6 +209,14 @@
           color: #00203a
           text-decoration: none
           transform: translateX(30px)
+
+  .form
+    &__button
+      &:hover
+        border: 1px solid #f8a25a
+        background: #f8a25a
+        color: #ffffff
+        
   
   
  
