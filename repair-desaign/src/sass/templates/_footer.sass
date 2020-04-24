@@ -1,0 +1,150 @@
+.footer
+  padding: 0
+  background: $dark url('../img/footer/footer-bg.webp') no-repeat center / cover
+  position: relative
+  padding-bottom: 14rem
+  margin-top: -1px
+  &-wrap
+    position: relative
+    top: -22rem
+    max-width: 63.07rem
+    background: $black url('../img/bg-lines.svg') center / cover
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    padding: 34px 0
+    margin: auto 
+    margin-bottom: -22.2rem
+  &__heading
+    font-family: 'Yeseva One'
+    font-size: 1.428rem
+    text-transform: uppercase
+    margin-bottom: 3.274rem
+  &__form
+    width: 37.14rem
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-bottom: 3rem
+  &__group
+    display: inline-block
+    width: 16.5rem
+    margin-bottom: 3.45rem
+    position: relative
+  &__question-group
+    display: block
+    flex-basis: 100%
+    margin-bottom: 3rem
+    position: relative
+  &__label
+    font-size: 1.07rem
+    display: block
+  &__input
+    min-width: 100%
+    font-size: 1.285rem
+    border-bottom: 1px solid rgba($light, 0.15)
+    color: $light
+    font-family: 'Futura Book'
+    &::placeholder
+      color: $light
+      font-family: 'Futura Book'
+      font-size: 1.285rem
+  &__policy
+    flex-basis: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    position: relative
+    margin-bottom: 2.7rem
+    &-checkbox
+      opacity: 0
+      position: absolute !important
+      clip: rect(1px 1px 1px 1px)
+      clip: rect(1px, 1px, 1px, 1px)
+      padding: 0 !important
+      border: 0 !important
+      height: 1px !important
+      width: 1px !important
+      overflow: hidden
+      &:checked ~
+        .footer__policy-label
+          &::before
+            content: ''
+            background: $primary url('../img/checked.svg') no-repeat center  
+    &-label
+      display: flex
+      align-items: flex-end
+      font-family: 'Futura Book'
+      font-size: 1.142rem
+      margin-bottom: 1rem
+      &::before
+        content: ''
+        margin-top: 6px
+        width: 1.285rem
+        height: 1.285rem
+        border: 1px solid $primary   
+        border-radius: 1px   
+        margin-right: 9px
+  &__button-wrap
+    flex-basis: 100%
+    display: flex
+    justify-content: center
+  &__button
+    font-size: 1.07rem
+    font-family: 'Futura Demi'
+    padding: 1.428rem 4.4rem
+    border-radius: 0
+  
+  &__contacts
+    font-family: 'Yeseva One'
+    font-size: 1.428rem
+    color: $primary
+    text-align: center
+    text-transform: uppercase
+    line-height: 0.5rem
+    margin-top: 3rem
+    &-phone
+      font-size: 1.428rem
+      text-decoration: 
+      color: $primary
+    &-icons
+      margin-top: 2.35rem
+    &-icon
+      margin: 0 0.3rem
+  
+  &__menu
+    background: $black
+    position: absolute
+    width: 100%
+    bottom: 0
+    left: 0
+    padding: 3rem 0
+  &__map
+    margin-top: 3rem
+    display: flex
+    justify-content: center
+    &-content
+      width: 80%
+      height: 465px
+    
+  &__validation-error
+    color: tomato
+    font-size: 1.285rem
+    order: 2
+    font-family: 'Futura Book'
+    flex-basis: 90%
+    position: absolute
+    top: 4.3rem
+    left: 0
+
+input.footer__validation-error
+  border-bottom: 1px solid tomato
+  position: static !important
+
+.footer__policy .footer__validation-error
+  left: 0
+  right: 0
+  text-align: center
+  

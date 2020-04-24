@@ -1,0 +1,280 @@
+@media screen and ( max-width: 1350px )
+  html
+    font-size: 12px
+  
+  .nav
+    &__item
+      margin-right: 1rem
+    
+
+@media screen and ( max-width: 1200px )
+  // footer
+  .footer
+    &__map
+      &-content
+        width: 100%
+        height: 40vh
+
+@media screen and ( max-width: 992px )
+  // hero
+  .hero
+    &__instagram
+      display: none
+    &__content
+      margin-left: 0
+
+  .nav
+    display: none
+
+    // types
+  .card
+    &__text
+      margin-top: -0.5rem
+      min-width: 100%
+
+    // projects
+  .projects
+    &__info-col
+      width: 49%
+    &__image-col
+      align-self: center
+      width: 50%
+    &__text
+      flex-basis: 50%
+  
+
+
+@media screen and ( max-width: 760px )
+  // types
+  .row
+    flex-direction: column  
+    align-items: center
+  .types
+    &__card
+      margin-bottom: 5rem
+
+  
+  // design-project
+  .design-project
+    &__row
+      margin-bottom: 0
+    &__card
+      margin-bottom: 5rem
+    &::after
+      top: 0
+      height: 100%
+    &__section-title
+      color: $light
+    &__section-description
+      color: $light
+
+  .card
+    &__text
+      margin-top: -10rem
+      min-width: 80%
+      margin-left: 0
+
+  // projects
+  .projects
+    &__info-col
+      align-self: flex-start
+      width: 75%
+    &__image-col
+      margin-top: 2.57rem
+      width: 100%
+      align-self: flex-start
+
+  // control
+  .control
+    padding-top: 0
+    background: $dark
+    color: $light
+    &__form
+      display: flex
+      flex-direction: column
+    &__input-group
+      flex-basis: 100%
+      margin-bottom: 4rem
+    &__video
+      max-width: 100%
+      height: 300px
+      &-play
+        max-width: 23%
+    &__label
+      color: rgba($light, 0.5)
+    &__input
+      min-width: 100%
+      color: $light
+      border-bottom-color: $light
+      padding-bottom: 0.6rem
+      &::placeholder
+        color: $light
+    &__policy
+      align-self: center
+      &-label
+        margin-top: 0.5rem
+    &__button
+      padding-left: 8rem
+      padding-right: 8rem
+      align-self: center
+
+  //footer
+  .footer
+    background: $dark
+    display: flex
+    &__form
+      width: 100%
+    &-wrap
+      background: $dark
+      position: static
+      max-width: 100%
+      display: flex
+      flex-direction: column
+      margin-bottom: 3rem
+      padding: 0
+    &__group
+      width: 100%
+    &__contacts
+      line-height: 1rem
+      &-place
+        line-height: 2rem
+      &-phoneText
+        line-height: 2rem
+        margin-top: -1rem
+      &-phone
+        display: block  
+      
+
+
+      
+@media screen and ( max-height: 590px )
+  // hero
+  .hero
+    &__scroll-down
+      display: none
+    
+
+@media screen and ( max-width: 570px )
+  .contacts
+    display: flex
+    justify-content: center
+    align-items: center
+    &__phone
+      margin-right: 0
+      color: $light
+      text-decoration: none
+    &__button
+      display: none
+
+  .title
+    font-size: 1.64rem
+
+  .hero
+    &__scroll-down
+      display: none
+    &__content
+      max-width: 22.86rem
+    &__title
+      line-height: 132.83%
+    &__text
+      font-size: 1.29rem
+      margin-bottom: 2.28rem
+      line-height: 135.84%
+    &__button
+      display: block
+      min-width: 22.86rem
+      margin-bottom: 1.85rem
+
+  //  projects
+  .projects
+    &__info-col
+      width: 100%
+
+  // control
+  .control
+    padding-bottom: 0
+    &__button
+      width: 100%
+      align-self: center
+      order: 2
+      margin-bottom: -2rem
+    &__policy
+      align-self: flex-start
+      margin-bottom: 4rem
+      margin-top: -1rem
+
+  // design-project
+  .design-project
+    &__section-description
+      max-width: 80%
+ 
+@media screen and ( max-width: 450px )
+
+  
+    
+  .hero
+    &__content
+      min-width: 100%
+    &__button
+      min-width: 100%
+    &__text
+      max-width: 22.86rem
+    &__title
+      max-width: 22.86rem
+
+  // goal
+    .goal
+      &__row
+        align-items: center
+
+  // footer
+  .footer
+    padding-bottom: 3rem
+    &__container
+      display: flex
+      flex-direction: column
+    &-wrap
+      padding-bottom: 0
+      // margin-bottom: 46px
+    &__form
+      padding-bottom: 0
+      margin-bottom: 0
+    &__policy
+      &-label
+        align-self: flex-start
+    &__button
+      width: 100%
+    &__menu
+      display: none
+    &__contacts
+      margin-top: 40px
+      order: 2
+    &__map
+      margin-top: 0
+  
+  .footer__policy .footer__validation-error
+    left: 0
+    right: 0
+    text-align: left
+  
+
+  // control
+  .control
+    &__video
+      height: 250px
+
+  // modal
+  .modal
+    &__button
+      margin-top: 3.78rem
+    
+  // design-project
+  .design-project
+    &__section-description
+      max-width: 100%
+  
+@media screen and ( max-height: 400px )
+  .hero
+    &__button
+      display: none
+  

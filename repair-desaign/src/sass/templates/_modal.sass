@@ -1,0 +1,116 @@
+.modal
+  position: fixed
+  left: 0
+  top: 0
+  bottom: 0
+  right: 0
+  z-index: 199
+  width: 100%
+  height: 100%
+  background: rgba($dark, 0.6)
+  display: none
+  &__dialog-wrap
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+  &__dialog
+    position: relative
+    background: $dark url('../img/bg-lines.svg') center no-repeat
+    padding: 1rem 3.5rem 1.928rem 3.5rem
+    color: $light
+    max-width: 36.36rem
+  &__close
+    position: absolute
+    top: 0
+    right: 0
+    display: block
+    width: 28px
+    height: 28px
+    background: transparent url('../img/close.svg') no-repeat center 
+    border: none
+    outline: none
+    margin: 12px
+    cursor: pointer
+  &__title
+    font-family: Yeseva One , cursiv
+    font-style: normal
+    font-weight: normal
+    font-size: 1.357rem
+    line-height: 1.857rem
+    text-align: center
+    margin-bottom: 1.9rem
+  &__form
+    display: flex
+    flex-direction: column
+  &__button
+    align-self: flex-end
+    padding: 18px 47px
+    border-radius: 0
+    margin-top: 2.78rem
+  &__policy
+    position: relative
+    &-checkbox
+      opacity: 0
+      position: absolute !important
+      clip: rect(1px 1px 1px 1px)
+      clip: rect(1px, 1px, 1px, 1px)
+      padding: 0 !important
+      border: 0 !important
+      height: 1px !important
+      width: 1px !important
+      overflow: hidden
+      &:checked ~
+        .modal__policy-label
+          &::before
+            content: ''
+            background: $primary url('../img/checked.svg') no-repeat center  
+    &-label
+      display: flex
+      align-items: flex-end
+      font-family: 'Futura Book'
+      font-size: 1.142rem
+      position: relative
+      &::before
+        content: ''
+        margin-top: 6px
+        width: 1.285rem
+        height: 1.285rem
+        border: 1px solid $primary   
+        border-radius: 1px   
+        margin-right: 9px
+  &__label
+    font-size: 1.07rem
+  &__input
+    border-color: rgba(255, 255, 255, 0.15)
+    font-family: 'Futura Medium'
+    font-size: 1.285rem
+    color: $light
+    &-group
+      display: flex
+      flex-direction: column
+      margin-bottom: 3.3rem
+      position: relative
+    &:last-of-type
+      margin-bottom: 0.75rem
+    &::placeholder
+      font-family: 'Futura Medium'
+      font-size: 1.285rem
+      color: $light
+  &__validation-error
+    color: tomato
+    font-size: 1.285rem
+    font-family: 'Futura Medium'
+    order: 2
+    display: block
+    top: 4rem
+
+input.modal__validation-error
+  border-bottom: 1px solid tomato
+
+label.modal__validation-error
+  position: absolute
+
+#policyAgreement-error
+  top: 2.5rem
