@@ -70,6 +70,8 @@
   .slide-mask
     &::after
       left: -17% !important
+    &:focus
+      opacity: 0
 
   .stages
     &__content
@@ -154,13 +156,12 @@
       display: none 
     &__button
       position: relative
-      span
+      a
         &::after
-          content: url('../img/header/hero__arrow-down.png') !important
           position: absolute 
-          bottom: -114px
+          bottom: -78px
           right: 50%
-          transform: translateX(10px)
+          transform: rotate(90deg) translateY(-17px)
 
   // features
   .features
@@ -252,7 +253,8 @@
         border: 1px solid #f8a25a
         background: #f8a25a
         color: #ffffff
-        
+
+   
   
   
  
