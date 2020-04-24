@@ -1,0 +1,52 @@
+.price
+  background: #1e1e1e url('../img/price/price-bg.webp') no-repeat center / cover
+  padding: 85px 0
+  margin-top: 14rem
+  &__container
+    background: #ffffff
+    position: relative
+  &__header
+    color: #2d2c2c
+    font-size: 2.142rem
+    font-weight: 500
+    margin-bottom: 3.428rem
+    margin-top: 0.5rem
+    text-align: center
+  &__form
+    padding: 5rem 3.57rem 5rem 3.57rem
+    max-width: 48rem
+    &-label
+      color: #939292
+    &-input
+      padding: 0.6rem 0
+      margin-bottom: 1rem
+      color: #1e1e1e
+      border: none
+      border-bottom: 1px solid #464544
+      flex-basis: 100%
+      order: 2
+      &::placeholder
+        color: #1e1e1e
+  &__button
+    display: block
+    margin: 0 auto
+    margin-top: 2rem
+    padding: 0.6rem 3rem
+  &__image
+    position: absolute
+    right: 0
+    top: 0
+    width: 50%
+    height: 100%
+    background: url('../img/price/price-form-bg.png') no-repeat 73% 0
+  &__input-group
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  &__validation-error
+    color: tomato
+      
+
+.price__input-group
+  input.price__validation-error
+    border-bottom-color: tomato

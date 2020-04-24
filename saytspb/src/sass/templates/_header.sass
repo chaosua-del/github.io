@@ -1,0 +1,162 @@
+.header
+  z-index: 999
+  &__menu
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    color: $nav_dark
+    overflow: hidden
+    
+
+.nav
+  &__container 
+    width: 100%
+    overflow: hidden
+    display: flex
+    justify-content: space-between
+    align-items: center
+    // display: flex
+  &__logo
+    letter-spacing: 1.02px
+    font-size: 1.857rem
+    font-weight: 700
+    color: $nav_dark
+    display: flex
+    align-items: center
+    text-transform: uppercase
+    &::before
+      content: url('../img/header/logo.png')
+      margin-right: 0.93rem
+  &__list
+    display: flex
+    // flex-wrap: wrap
+    margin-left: 8rem
+    align-items: center
+    ul
+      list-style: none
+      li
+        font-size: 1.142rem
+        text-transform: uppercase
+        float: left
+        margin-right: 1.857rem
+        position: relative
+        &:hover
+          &::after
+            content: ''
+            position: absolute
+            width: 100%
+            height: 2px
+            background-color: $primary
+            display: block
+            bottom: -3px
+            left: 0
+        a
+          letter-spacing: -0.24px
+          color: $nav-dark
+          font-weight: 300
+          display: block
+  &__phone
+    display: block
+    color: $nav-dark
+    font-weight: 500
+    font-size: 1.285rem
+    margin-left: -1rem
+  &__menu
+    display: none
+    cursor: pointer
+      
+    
+// .menu
+//   &__nav
+//     font-size: 1.142rem
+//     text-transform: uppercase
+//     display: flex
+//     flex-direction: column
+//     align-items: center
+//     justify-content: center
+//     position: absolute
+//     transform: translateY(-100%)
+//     clear: both
+//     transition: all 0.4 ease-out
+
+//   &__btn
+//     display: none
+      
+//   &__contacts
+//     display: flex
+//     align-items: center
+
+// .logo
+//   display: flex
+//   &__name
+//     letter-spacing: 1.02px
+//     font-size: 1.857rem
+//     font-weight: 700
+//     color: $nav_dark
+//     display: flex
+//     align-items: center
+//     &::before
+//       content: url('../img/header/logo.png')
+//       margin-right: 0.93rem
+
+// .nav
+//   &__item
+//     margin-right: 1.857rem
+//     margin-bottom: 1rem
+//     letter-spacing: -0.24px
+//     position: relative
+//     color: $nav_dark
+//     &::after
+//       content: ''
+//       position: absolute
+//       transition: all 0.3s
+//     &:hover
+//       &::after
+//         width: 100%
+//         height: 2px
+//         background-color: $primary
+//         display: block
+//         bottom: -3px
+//         left: 0
+//     &:nth-last-child(-n+1)
+//       margin-right: 0
+        
+      
+// .contacts
+//   &__phone
+//     font-size: 1.285rem
+//     font-weight: 500
+//     color: $nav_dark
+//     margin-right: 3.3rem
+//     margin-left: 1.3rem
+//     margin-bottom: 1rem
+
+// .burger-menu
+//   display: block
+//   position: relative
+//   padding: 30px 22px
+//   &__lines
+//     background-color: $primary
+//     display: block
+//     height: 2px;
+//     position: relative;
+//     transition: background 0.2s ease-out;
+//     width: 20px;
+//     &::after
+//       content: ''   
+//       top: 5px
+//     &::before
+//       content: ''
+//       top: -5px
+    
+//   &__lines::after, &__lines::before
+//     background-color: $primary
+//     content: '';
+//     display: block;
+//     height: 100%;
+//     position: absolute;
+//     transition: all 0.2s ease-out;
+//     width: 100%;
+    
+

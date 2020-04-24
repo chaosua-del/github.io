@@ -1,0 +1,96 @@
+.questions
+  display: flex
+  justify-content: center
+  &__container
+    flex-basis: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    position: relative
+    &::after
+      content: url('../img/questions/questions-line.png')
+      position: absolute
+      bottom: 1rem
+      right: 47%
+  &__info-wrap
+    flex-basis: 47%
+    display: flex
+    flex-wrap: wrap
+    justify-content: flex-end
+    align-items: center
+    padding-right: 3rem
+  &__header
+    color: #1e1e1e
+    font-size: 2.57rem 
+    font-weight: 500
+    line-height: 3.143rem
+    max-width: 34.64rem
+    margin-bottom: -2rem
+    &-wrap
+      flex-basis: 100%
+      display: flex
+      justify-content: flex-end
+  &__location
+    color: #1a1a1a
+    &-title
+      font-size: 1.71rem
+      font-weight: 500
+      margin-top: 0
+      margin-bottom: 1rem
+    &-text
+      font-size: 1.285rem
+      font-weight: 300
+      display: block
+      margin-bottom: 1rem
+  &__schedule
+    color: #1a1a1a
+    font-size: 1.285rem
+    margin-right: 3rem
+    margin-left: 2rem
+    margin-top: -1rem
+    &-title
+      font-weight: 500
+      display: block
+      margin-bottom: 0.71rem
+    &-text
+      font-weight: 300
+      display: block
+      margin-bottom: 2.3rem
+  
+  &__form
+    max-width: 39.36rem
+    padding: 7rem 3.57rem 6rem 3.57rem
+    max-width: 48rem
+    &-wrap
+      flex-basis: 53%
+      background: #ff5a3c url('../img/questions/questions-form-bg.png') no-repeat 16% 37%
+    &-label
+      color: #faf6f5
+    &-input
+      background: transparent
+      padding: 0.6rem 0
+      margin-bottom: 1rem
+      color: #413f3e
+      border: none
+      border-bottom: 1px solid #939497
+      order: 2
+      flex-basis: 100%
+      &::placeholder
+        color: #1e1e1e
+  &__button
+    background: #ffffff
+    color: #ff5a3c
+    margin-top: 1.5rem
+    padding: 0.3rem 5rem
+  &__input-group
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  &__validation-error
+    color: #ffffff
+      
+
+.questions__input-group
+  input.price__validation-error
+    border-bottom-color: #ffffff
+
