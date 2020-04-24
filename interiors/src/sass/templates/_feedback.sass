@@ -1,15 +1,19 @@
 .feedback
   padding: 100px 0
+  &__title
+    margin-bottom: 90px
+  &__swiper-container
+    padding-bottom: 80px
   &__swiper-slide
-    width: 100% !important
+    // width: 90% !important
   &__card
     background: #ffffff
-    box-shadow: 4px 6.928px 36.72px 14.28px rgba(0, 0, 1, 0.02)
+    box-shadow: 4px 6.928px 36.72px 14.28px rgba(4, 4, 80, 0.02)
     max-width: 660px
     padding: 40px 120px 40px 60px
-    margin-left: auto
-    margin-right: 15%
+    left: 0%
     position: relative
+    display: block
   &__user-name
     font-size: 1.57rem
     font-family: 'Raleway'
@@ -31,3 +35,55 @@
     position: absolute
     right: -142px
     top: 41px
+  &__user-photoPreview
+    display: none
+
+.feedback__swiper-pagination
+
+.swiper-pagination-bullet
+  border-radius: 0
+  width: 26px
+  height: 3px
+
+.swiper-pagination-bullet-active
+  background: #182c3d
+
+.swiper-slide-active
+  margin-right: -40px
+
+.swiper-slide-prev
+  .feedback__card
+    display: none
+  .feedback__user-photoPreview
+    display: block
+    position: absolute
+    top: 41px
+    left: 49%
+    &::after
+      content: ''
+      position: absolute
+      width: 216px
+      height: 193px
+      top: 8px
+      left: 11px
+      background: rgba(#182c3d, 0.6)
+
+.swiper-slide-next
+  .feedback__card
+    display: none
+  .feedback__user-photoPreview
+    display: block
+    position: absolute
+    top: 41px
+    right: 41%
+    &::after
+      content: ''
+      position: absolute
+      width: 216px
+      height: 193px
+      top: 8px
+      left: 11px
+      background: rgba(#182c3d, 0.6)
+
+
+

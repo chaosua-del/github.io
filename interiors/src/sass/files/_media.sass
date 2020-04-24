@@ -1,3 +1,14 @@
+@media screen and ( max-width: 1350px )
+  // feedback
+  .swiper-slide-prev
+    .feedback__user-photoPreview
+      display: none !important
+  
+  .swiper-slide-next
+    .feedback__user-photoPreview
+      display: none !important
+  
+
 @media screen and ( max-width: 1250px )
   // .stages
   //   &__content
@@ -55,6 +66,11 @@
     //   &-text
     //     top: 70% !important
 
+  // portfolio
+  .slide-mask
+    &::after
+      left: -17% !important
+
   .stages
     &__content
       flex-basis: 50% !important
@@ -76,6 +92,26 @@
     &__policy-info
       text-align: center
 
+  // feedback
+  .feedback
+    &__swiper-container
+      padding-left: 15px
+      padding-right: 15px
+    &__swiper-slide
+      min-width: 100% 
+      display: flex !important
+      justify-content: center !important
+    &__card
+      text-align: center
+      margin-top: 120px
+      padding-top: 120px !important
+      padding-right: 40px !important
+      padding-left: 40px !important
+      left: -25% !important
+    &__user-photo
+      left: 50%
+      transform: translateX(-50%)
+      top: -105px !important
 
 @media screen and ( max-width: 768px )
   html

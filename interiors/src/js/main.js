@@ -3,7 +3,7 @@ $('document').ready(function () {
     interval: false
   })
 
-  var swiper = new Swiper('.swiper-container', {
+  var swiper = new Swiper('.portfolio__swiper-container', {
     slidesPerView: 3,
     centeredSlides: false,
     navigation: {
@@ -12,9 +12,11 @@ $('document').ready(function () {
     },
   });
 
-  var swiper2 = new Swiper('.feedback__swiper.container', {
-    loop: true,
-    spaceBetween: 30,
+  var swiper2 = new Swiper('.feedback__swiper-container', {
+    // loop: true,
+    slidesPerView: '2',
+    centeredSlides: true,
+    // spaceBetween: -130,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -30,7 +32,7 @@ $('document').ready(function () {
 
   $(window).on('resize', function () {
     if ($(window).width() < 1250) {
-      var swiper = new Swiper('.swiper-container', {
+      var swiper = new Swiper('.portfolio__swiper-container', {
         slidesPerView: 'auto',
         navigation: {
           nextEl: '.portfolio__swiper-button-next',
@@ -41,8 +43,32 @@ $('document').ready(function () {
   })
 
   if ($(window).width() < 1250) {
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.portfolio__swiper-container', {
       slidesPerView: 'auto',
+      navigation: {
+        nextEl: '.portfolio__swiper-button-next',
+        prevEl: '.portfolio__swiper-button-prev',
+      },
+    });
+  }
+
+  $(window).on('resize', function () {
+    if ($(window).width() < 1250 && $(window).width() > 992) {
+      var swiper = new Swiper('.portfolio__swiper-container', {
+        slidesPerView: 'auto',
+        spaceBetween: -73,
+        navigation: {
+          nextEl: '.portfolio__swiper-button-next',
+          prevEl: '.portfolio__swiper-button-prev',
+        },
+      });
+    }
+  })
+
+  if ($(window).width() < 1250 && $(window).width() > 992) {
+    var swiper = new Swiper('.portfolio__swiper-container', {
+      slidesPerView: 'auto',
+      spaceBetween: -73,
       navigation: {
         nextEl: '.portfolio__swiper-button-next',
         prevEl: '.portfolio__swiper-button-prev',
