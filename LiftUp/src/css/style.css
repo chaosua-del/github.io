@@ -1,0 +1,94 @@
+html {
+  font-size: 14px;
+}
+
+.navbar-collapse {
+  position: absolute;
+  top: 90%;
+  background-color: transparent !important;
+}
+
+.navbar-nav {
+  background-color: transparent !important;
+}
+
+.navbar-toggler {
+  outline: none !important;
+}
+
+.header {
+  font-family: 'Montserrat';
+}
+
+.header__logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.header__phone, .header__ua, .header__ru {
+  color: #000000;
+}
+
+.header__phone:hover, .header__ua:hover, .header__ru:hover {
+  color: #000000;
+  text-decoration: underline !important;
+}
+
+.header__ua {
+  font-weight: 700;
+}
+
+.hero {
+  background: #f8f9fa;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #505050;
+}
+
+.hero__header {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 0px 9px 10px rgba(0, 0, 0, 0.24);
+  text-transform: uppercase;
+}
+
+.hero__button {
+  padding: 22px 45px;
+  border: 1px solid black;
+  background-color: transparent;
+  font-size: 1.285rem;
+  font-weight: 400;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar-collapse {
+    position: static !important;
+  }
+  .header__phone {
+    display: none;
+  }
+  .header__phone--nav {
+    display: inline-block !important;
+  }
+  .header__logo img {
+    display: none;
+  }
+  .hero__header {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hero__button:hover {
+    -webkit-box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.24);
+            box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.24);
+  }
+}
+/*# sourceMappingURL=style.css.map */
