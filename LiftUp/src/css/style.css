@@ -2,6 +2,10 @@ html {
   font-size: 14px;
 }
 
+img {
+  max-width: 100%;
+}
+
 .navbar-collapse {
   position: absolute;
   top: 90%;
@@ -38,6 +42,13 @@ html {
   font-weight: 700;
 }
 
+.title {
+  font-size: 2.714rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
 .hero {
   background: #f8f9fa;
   height: 100vh;
@@ -65,6 +76,30 @@ html {
   font-size: 1.285rem;
   font-weight: 400;
   border-radius: 3px;
+}
+
+.about__card {
+  margin-bottom: 60px;
+}
+
+.about__card-icon {
+  height: 60px;
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.about__card-header {
+  font-family: 'Merriweather', sans-serif;
+  font-weight: 700;
+  font-size: 1.428rem;
+  margin-bottom: 15px;
+}
+
+.about__card-description {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1.142rem;
+  color: rgba(0, 0, 0, 0.741);
 }
 
 @media screen and (max-width: 576px) {
