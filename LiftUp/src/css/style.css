@@ -72,7 +72,7 @@ img {
 .hero__button {
   padding: 22px 45px;
   border: 1px solid black;
-  background-color: transparent;
+  background-color: #f8f9fa;
   font-size: 1.285rem;
   font-weight: 400;
   border-radius: 3px;
@@ -102,6 +102,57 @@ img {
   color: rgba(0, 0, 0, 0.741);
 }
 
+.price {
+  background: #f8f9fa;
+}
+
+.price__card {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  height: 400px;
+  background: url("../img/price-card-bg.jpg") no-repeat center/cover;
+  position: relative;
+}
+
+.price__card::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.price__info {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #ffffff;
+  z-index: 2;
+}
+
+.info__header {
+  font-family: 'Merriweather', sans-serif;
+  font-weight: 700;
+  font-size: 1.428rem;
+  margin-bottom: 15px;
+}
+
+.info__list {
+  margin: 0;
+  padding: 0;
+}
+
+.info__list-element {
+  font-size: 1.143rem;
+  font-family: 'Raleway';
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
 @media screen and (max-width: 576px) {
   .navbar-collapse {
     position: static !important;
@@ -124,6 +175,18 @@ img {
   .hero__button:hover {
     -webkit-box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.24);
             box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.24);
+    background-color: #71f5ea;
+  }
+  .price__card:hover {
+    -webkit-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+    background: #71f5ea;
+  }
+  .price__card:hover .price__info {
+    color: #000000;
+  }
+  .price__card:hover::after {
+    background-color: rgba(0, 0, 0, 0);
   }
 }
 /*# sourceMappingURL=style.css.map */
