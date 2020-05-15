@@ -73,5 +73,24 @@ $(document).ready(function () {
   // initialize wow
   new WOW().init();
 
+  // scroll down
+  $('.hero__button').click(function (b) {
+    b.preventDefault();
+    $('body,html').animate({
+      scrollTop: $(this.hash).offset().top - $('nav').outerHeight()
+    },
+      1000
+    )
+  });
+
+  // scroll down
+  $('.nav-link').click(function (b) {
+    b.preventDefault();
+    $('body,html').animate({
+      scrollTop: $(this.hash).offset().top - $('nav').outerHeight()
+    },
+      1000
+    )
+  });
 
 });

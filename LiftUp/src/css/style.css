@@ -85,6 +85,8 @@ section {
   font-size: 1.285rem;
   font-weight: 400;
   border-radius: 3px;
+  text-decoration: none;
+  color: #000000;
 }
 
 .about {
@@ -320,6 +322,11 @@ section {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .form__button {
+    -ms-flex-item-align: center !important;
+        -ms-grid-row-align: center !important;
+        align-self: center !important;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -350,6 +357,8 @@ section {
     -webkit-box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.24);
             box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.24);
     background-color: #71f5ea;
+    text-decoration: none;
+    color: #000000;
   }
   .price__card:hover {
     -webkit-transition: background-color 0.2s ease-in-out;
