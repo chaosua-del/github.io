@@ -53,6 +53,10 @@ button {
   text-align: center;
 }
 
+section {
+  padding-bottom: 150px !important;
+}
+
 .hero {
   background: #f8f9fa;
   height: 100vh;
@@ -64,6 +68,7 @@ button {
           align-items: center;
   font-family: 'Montserrat', sans-serif;
   color: #505050;
+  padding-bottom: 0 !important;
 }
 
 .hero__header {
@@ -83,7 +88,7 @@ button {
 }
 
 .about {
-  padding: 100px 0;
+  padding-top: 50px;
 }
 
 .about__card {
@@ -112,7 +117,7 @@ button {
 
 .price {
   background: #f8f9fa;
-  padding: 100px 0;
+  padding-top: 50px;
 }
 
 .price__card {
@@ -163,7 +168,7 @@ button {
 }
 
 .question {
-  padding: 100px 0;
+  padding-top: 50px;
 }
 
 .form {
@@ -215,6 +220,12 @@ button {
   color: tomato;
 }
 
+.form__counter {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 1rem;
+}
+
 .form__input {
   outline: none;
   border: none;
@@ -241,6 +252,67 @@ button {
 
 .form__error {
   border-bottom-color: tomato;
+}
+
+.footer {
+  background: #262b2e;
+  padding: 85px 0;
+}
+
+.footer__header {
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer__phone {
+  color: rgba(255, 255, 255, 0.4);
+  font-family: 'Montserrat';
+  display: block;
+  margin-top: 15px;
+  letter-spacing: 2px;
+}
+
+.contacts {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts__box {
+  height: 43px;
+  width: 43px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: #424648;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.contacts__box:hover {
+  text-decoration: none;
+}
+
+.contacts__icon {
+  font-size: 26px;
+  color: #bbb8b9;
 }
 
 @media screen and (max-width: 768px) {
@@ -289,6 +361,15 @@ button {
   }
   .price__card:hover::after {
     background-color: rgba(0, 0, 0, 0);
+  }
+  .contacts__box:hover {
+    background-color: #6eeee4;
+  }
+  .contacts__box:hover .contacts__icon {
+    color: #070e0d;
+  }
+  .footer__phone:hover {
+    color: rgba(255, 255, 255, 0.4);
   }
 }
 /*# sourceMappingURL=style.css.map */

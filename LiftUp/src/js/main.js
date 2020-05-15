@@ -1,5 +1,18 @@
 $(document).ready(function () {
 
+  let input = $('#user-message');
+  var symbolCount = $('.form__counter');
+  let temp = 0, value = input.attr('maxlength');;
+  symbolCount.text(temp + '/' + value);
+  // подсчет символов в поле меседж
+
+  input.on('input keydown', () => {
+    temp = input.val().length;
+    symbolCount.text(temp + '/' + value);
+
+  });
+
+
 
   // валидация форм
   $('.form').validate({
@@ -20,17 +33,18 @@ $(document).ready(function () {
     },
     messages: {
       userName: {
-        required: "Имя обязательно",
-        minlength: "Слишком короткое имя",
-        maxlength: "Имя не должно быть больше 15 букв"
+        // required: "Имя обязательно",
+        required: "Ім'я обов'язкове",
+        minlength: "Занадто коротке ім'я",
+        maxlength: "Ім'я не може бути довше за 15 символів"
       },
       userMessage: {
-        required: "Задайте вопрос",
-        maxlength: "Вопрос должен состоять из не менее  50 символов"
+        // required: "Задайте вопрос",
+        maxlength: "Максимальна кількість символів - 50"
       },
       userPhone: {
-        required: "Телефон обязателен",
-        minlength: "Телефон слишком короткий"
+        required: "Телефон обов'язковий",
+        minlength: "Введіть телефон вірно"
       },
     },
     submitHandler: function (form) {
@@ -50,6 +64,14 @@ $(document).ready(function () {
       });
     }
   });
+
+  // маски для инпутов
+  $('[type=tel]').mask("+38 (000) 00-000-00", {
+    placeholder: "+38 (___) __-___-__"
+  });
+
+  // initialize wow
+  new WOW().init();
 
 
 });
