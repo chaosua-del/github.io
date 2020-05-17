@@ -112,4 +112,9 @@ $(document).ready(function () {
     )
   });
 
+  // проверка на устройство
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+    $('#viber-link').attr('href', 'viber://add?number=380677017884');
+  }
+
 });
