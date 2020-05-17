@@ -93,7 +93,7 @@ $(document).ready(function () {
   });
 
   // scroll down
-  $('.nav-link').click(function (b) {
+  $('.navigation-item').click(function (b) {
     b.preventDefault();
     $('body,html').animate({
       scrollTop: $(this.hash).offset().top - $('nav').outerHeight()
