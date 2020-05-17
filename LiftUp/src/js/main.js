@@ -1,8 +1,17 @@
 $(document).ready(function () {
 
   let input = $('#user-message');
-  var symbolCount = $('.form__counter');
+  let symbolCount = $('.form__counter');
   let temp = 0, value = input.attr('maxlength');;
+
+  let success = $('.success');
+  let successClose = $(".success__close");
+
+  // on click we toggle class for success
+  successClose.on('click', function () {
+    success.hide();
+  });
+
   symbolCount.text(temp + '/' + value);
   // подсчет символов в поле меседж
 
@@ -55,7 +64,7 @@ $(document).ready(function () {
         success: function (response) {
           // console.log("AJAX сработал. Ответ сервера: Форма отправлена");
           $(form)[0].reset();
-          // success.show();
+          success.show();
           // alert("Форма отправлена, мы свяжемся с вами в течении 10 минут.");
         },
         error: function (response) {
@@ -85,6 +94,16 @@ $(document).ready(function () {
 
   // scroll down
   $('.nav-link').click(function (b) {
+    b.preventDefault();
+    $('body,html').animate({
+      scrollTop: $(this.hash).offset().top - $('nav').outerHeight()
+    },
+      1000
+    )
+  });
+
+  // scroll down
+  $('.info__button').click(function (b) {
     b.preventDefault();
     $('body,html').animate({
       scrollTop: $(this.hash).offset().top - $('nav').outerHeight()
