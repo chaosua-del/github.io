@@ -38,7 +38,7 @@
    * Polish (Elementary) - learning it by myself.
   
 ### Additional information
-   Also I have ended special web-development courses. Here is [certificate](https://mfs-03.getcourse.ru/public/files/12250/55/e42f365e04c6f39788bc6b60761125a3.png?e=1587837599&s=qoAKGbJ2N9EePCqzeKYCQg) of successfull gradution
+   Also I have ended special web-development courses. Here is [certificate](https://drive.google.com/file/d/1HpwBfupO_wvSvF3E40FNp7C0jQrN4a0r/view?usp=sharing) of successfull gradution
    
    
    
