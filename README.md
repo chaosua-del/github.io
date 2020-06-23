@@ -21,7 +21,7 @@
    * Bootstrap library 
    * Bem methodology
    * Work with GIT
-   * Gulp toolkit
+   * Gulp, Webpack toolkits
    * Php (basic)
   
 ### Code examples/Experience
