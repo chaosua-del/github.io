@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap" rel="stylesheet" />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav header__nav">
+            <div class="container nav__container">
+                <div class="menu-left">
+                    <div class="nav__location">Москва</div>
+
+                    <div class="nav__list">
+                        <a href="#" class="nav__list-item">О компании</a>
+                        <a href="#" class="nav__list-item">Контакты</a>
+                        <a href="#" class="nav__list-item">Замер</a>
+                        <a href="#" class="nav__list-item">Рассрочка</a>
+                        <a href="#" class="nav__list-item">Адреса салонов</a>
+                    </div>
+                </div>
+
+                <div class="menu-right">
+                    <a href="mailto:#" class="nav__email">info@kuhnicity.ru</a>
+
+                    <div class="nav__contacts">
+                        <button class="nav__contacts-button">Заказать звонок</button>
+                        <a href="tel:+74991354378" class="nav__contacts-phone">+7 (499) 135-43-78</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </nav>
+        <!-- /.nav -->
+
+
+        <div class="main header__main">
+            <div class="container main__container">
+                <a href="#" class="main__link">Каталог</a>
+
+                <a href="index.html" class="main__logo"><img src="img/header/header-logo.svg" alt="logo"></a>
+
+                <button class="main__button">Рассчитать кухню</button>
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.main header__main -->
+    </header>
+
+    <section class="hero">
+        <div class="container hero__container">
+            <!-- переход между каталогом и главной страницей -->
+            <div class="hero__navigation">
+                <a href="#" class="hero__navigation-link">Главная</a>
+                <span class="more-sign"> > </span>
+                <a href="#" class="hero__navigation-link link--active">Каталог</a>
+            </div>
+
+            <h1 class="hero__title">Кухни KÜCHENBERG</h1>
+
+            <div class="hero__info">
+                <span class="hero__info-text">Найдено</span>
+                <span class="hero__info-number">308</span>
+                <span class="hero__info-text">Моделей</span>
+            </div>
+        </div>
+        <!-- /.container hero__container -->
+    </section>
+    <!-- /.hero -->
+
+    <section class="catalog">
+        <!-- меню фильтров -->
+        <div class="menu catalog__menu">
+            <div class="menu__dropdowns menu-left">
+                <div class="menu__dropdown">Стиль
+                    <div class="menu__dropdown-list">
+                        <p class="menu__dropdown-listItem">Из дерева</p>
+                        <p class="menu__dropdown-listItem">мдф</p>
+                        <p class="menu__dropdown-listItem">Алюминий</p>
+                        <p class="menu__dropdown-listItem">Цельные</p>
+                        <p class="menu__dropdown-listItem">Пластиковые</p>
+                    </div>
+                </div>
+                <div class="menu__dropdown">Планировка
+                    <div class="menu__dropdown-list">
+                        <p class="menu__dropdown-listItem">Из дерева</p>
+                        <p class="menu__dropdown-listItem">мдф</p>
+                        <p class="menu__dropdown-listItem">Алюминий</p>
+                        <p class="menu__dropdown-listItem">Цельные</p>
+                        <p class="menu__dropdown-listItem">Пластиковые</p>
+                    </div>
+                </div>
+                <div class="menu__dropdown">Фасад
+                    <div class="menu__dropdown-list">
+                        <p class="menu__dropdown-listItem">Из дерева</p>
+                        <p class="menu__dropdown-listItem">мдф</p>
+                        <p class="menu__dropdown-listItem">Алюминий</p>
+                        <p class="menu__dropdown-listItem">Цельные</p>
+                        <p class="menu__dropdown-listItem">Пластиковые</p>
+                    </div>
+                </div>
+                <div class="menu__dropdown">Покрытие
+                    <div class="menu__dropdown-list">
+                        <p class="menu__dropdown-listItem">Из дерева</p>
+                        <p class="menu__dropdown-listItem">мдф</p>
+                        <p class="menu__dropdown-listItem">Алюминий</p>
+                        <p class="menu__dropdown-listItem">Цельные</p>
+                        <p class="menu__dropdown-listItem">Пластиковые</p>
+                    </div>
+                </div>
+                <div class="menu__dropdown">Цвет
+                    <div class="menu__dropdown-list">
+                        <p class="menu__dropdown-listItem">Из дерева</p>
+                        <p class="menu__dropdown-listItem">мдф</p>
+                        <p class="menu__dropdown-listItem">Алюминий</p>
+                        <p class="menu__dropdown-listItem">Цельные</p>
+                        <p class="menu__dropdown-listItem">Пластиковые</p>
+                    </div>
+                </div>
+                <div class="menu__dropdown">Размер
+                    <div class="menu__dropdown-list">
+                        <p class="menu__dropdown-listItem">Из дерева</p>
+                        <p class="menu__dropdown-listItem">мдф</p>
+                        <p class="menu__dropdown-listItem">Алюминий</p>
+                        <p class="menu__dropdown-listItem">Цельные</p>
+                        <p class="menu__dropdown-listItem">Пластиковые</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu__filters menu-right">
+                <label for="discount" class="menu__checkbox-label">
+                    <input type="checkbox" id="discount">Только со скидкой
+                    <span class="menu__checkmark checkmark"></span>
+                </label>
+
+                <span class="menu__dropdown-label">Сначала</span>
+                <div class="menu__dropdown menu__dropdown--light">Новинки
+                    <div class="menu__dropdown-list">
+                        <p class="menu__dropdown-listItem">Популярные</p>
+                        <p class="menu__dropdown-listItem">дешевые</p>
+                        <p class="menu__dropdown-listItem">дорогие</p>
+                    </div>
+                </div>
+
+                <button class="menu__button"><span class="menu__button-text">Сбросить</span></button>
+            </div>
+        </div>
+
+        <!-- список карточек -->
+        <div class="catalog__kitchens kitchens">
+            <div class="container kitchens__container">
+
+                <div class="kicthens__card card">
+                    <div class="card__img"><img src="img/catalog/1.png" alt="kitchen-photo"></div>
+                    <div class="card__info">
+                        <span class="card__info-name">Bristel PRO</span>
+                        <span class="card__info-price">от 40 215 ₽/м²</span>
+                    </div>
+                    <p class="card__description">Роскошная дворцовая классика</p>
+
+                    <div class="card__tag card__tag--sale">Sale</div>
+
+                    <button class=" button card__button">подробнее</button>
+                </div>
+
+                <div class="kicthens__card card">
+                    <div class="card__img"><img src="img/catalog/2.png" alt="kitchen-photo"></div>
+                    <div class="card__info">
+                        <span class="card__info-name">Bristel PRO</span>
+                        <span class="card__info-price">от 40 215 ₽/м²</span>
+                    </div>
+                    <p class="card__description">Роскошная дворцовая классика</p>
+
+                    <div class="card__tag card__tag--hit">Hit</div>
+
+                    <button class=" button card__button">подробнее</button>
+                </div>
+
+                <div class="kicthens__card card">
+                    <div class="card__img"><img src="img/catalog/3.png" alt="kitchen-photo"></div>
+                    <div class="card__info">
+                        <span class="card__info-name">Bristel PRO</span>
+                        <span class="card__info-price">от 40 215 ₽/м²</span>
+                    </div>
+                    <p class="card__description">Роскошная дворцовая классика</p>
+
+                    <div class="card__tag"></div>
+
+                    <div class="card__tag card__tag--new">new</div>
+
+                    <button class=" button card__button">подробнее</button>
+                </div>
+
+                <div class="kicthens__card card">
+                    <div class="card__img"><img src="img/catalog/4.png" alt="kitchen-photo"></div>
+                    <div class="card__info">
+                        <span class="card__info-name">Bristel PRO</span>
+                        <span class="card__info-price">от 40 215 ₽/м²</span>
+                    </div>
+                    <p class="card__description">Роскошная дворцовая классика</p>
+
+                    <div class="card__tag"></div>
+
+                    <div class="card__tag card__tag--new">new</div>
+
+                    <button class=" button card__button">подробнее</button>
+                </div>
+
+                <div class="kicthens__card card">
+                    <div class="card__img"><img src="img/catalog/3.png" alt="kitchen-photo"></div>
+                    <div class="card__info">
+                        <span class="card__info-name">Bristel PRO</span>
+                        <span class="card__info-price">от 40 215 ₽/м²</span>
+                    </div>
+                    <p class="card__description">Роскошная дворцовая классика</p>
+
+                    <div class="card__tag"></div>
+
+                    <div class="card__tag card__tag--sale">sale</div>
+
+                    <button class=" button card__button">подробнее</button>
+                </div>
+
+                <div class="kicthens__card card">
+                    <div class="card__img"><img src="img/catalog/6.png" alt="kitchen-photo"></div>
+                    <div class="card__info">
+                        <span class="card__info-name">Bristel PRO</span>
+                        <span class="card__info-price">от 40 215 ₽/м²</span>
+                    </div>
+                    <p class="card__description">Роскошная дворцовая классика</p>
+
+                    <div class="card__tag"></div>
+
+                    <div class="card__tag card__tag--hit">hit</div>
+
+                    <button class=" button card__button">подробнее</button>
+                </div>
+
+                <div class="kicthens__card card">
+                    <div class="card__img"><img src="img/catalog/4.png" alt="kitchen-photo"></div>
+                    <div class="card__info">
+                        <span class="card__info-name">Bristel PRO</span>
+                        <span class="card__info-price">от 40 215 ₽/м²</span>
+                    </div>
+                    <p class="card__description">Роскошная дворцовая классика</p>
+
+                    <div class="card__tag"></div>
+
+                    <div class="card__tag card__tag--new">new</div>
+
+                    <button class=" button card__button">подробнее</button>
+                </div>
+
+                <div class="kicthens__card card">
+                    <div class="card__img"><img src="img/catalog/3.png" alt="kitchen-photo"></div>
+                    <div class="card__info">
+                        <span class="card__info-name">Bristel PRO</span>
+                        <span class="card__info-price">от 40 215 ₽/м²</span>
+                    </div>
+                    <p class="card__description">Роскошная дворцовая классика</p>
+
+                    <div class="card__tag"></div>
+
+                    <div class="card__tag card__tag--sale">sale</div>
+
+                    <button class=" button card__button">подробнее</button>
+                </div>
+
+                <div class="kicthens__card card">
+                    <div class="card__img"><img src="img/catalog/6.png" alt="kitchen-photo"></div>
+                    <div class="card__info">
+                        <span class="card__info-name">Bristel PRO</span>
+                        <span class="card__info-price">от 40 215 ₽/м²</span>
+                    </div>
+                    <p class="card__description">Роскошная дворцовая классика</p>
+
+                    <div class="card__tag"></div>
+
+                    <div class="card__tag card__tag--hit">hit</div>
+
+                    <button class=" button card__button">подробнее</button>
+                </div>
+
+
+            </div>
+            <!-- /.container cards__container -->
+        </div>
+        <!-- /.catalog__cards -->
+    </section>
+    <!-- /.catalog -->
+
+
+    <section class="quote">
+        <div class="container quote__container">
+            <div class="quote__text">
+                <p>Кухня — самое важное место в квартире. Здесь заряжаются <br>
+                    для нового дня и проводят вечер в кругу семьи, встречают гостей и готовят вместе с детьми. Давайте
+                    вместе создадим дизайн кухни вашей мечты.</p>
+            </div>
+
+            <button class="button quote__button">бесплатный дизайн проект</button>
+
+            <div class="user">
+                <div class="user-photo"><img src="img/quote/quote-user-photo.jpg" alt="user"></div>
+
+                <strong class="user-name">Анна Иванова</strong>
+
+                <span class="user-job">дизайнер КухниСити</span>
+            </div>
+        </div>
+        <!-- /.container quote__container -->
+
+        <!-- <div class="quote__user">
+            <div class="quote__user-photo"><img src="img/quote/quote-user-photo.jpg" alt="user"></div>
+
+            <strong class="quote__user-name">Анна Иванова</strong>
+
+            <span class="quote__user-job">дизайнер КухниСити</span>
+        </div> -->
+
+    </section>
+    <!-- /.quote -->
+
+
+    <section class="more">
+        <div class="more__kitchens kitchens">
+            <div class="container kitchens__container more__kitchens-container">
+
+                <div class="kicthens__card card card--large">
+                    <div class="card__img"><img src="img/catalog/card-large.png" alt="kitchen-photo"></div>
+                    <div class="card__info">
+                        <span class="card__info-name">Bristel PRO</span>
+                        <span class="card__info-price">от 40 215 ₽/м²</span>
+                    </div>
+                    <p class="card__description">Роскошная дворцовая классика</p>
+
+                    <div class="card__tag card__tag--sale">Sale</div>
+
+                    <button class=" button card__button">подробнее</button>
+                </div>
+
+                <div class="kicthens__card card">
+                    <div class="card__img"><img src="img/catalog/3.png" alt="kitchen-photo"></div>
+                    <div class="card__info">
+                        <span class="card__info-name">Bristel PRO</span>
+                        <span class="card__info-price">от 40 215 ₽/м²</span>
+                    </div>
+                    <p class="card__description">Роскошная дворцовая классика</p>
+
+                    <div class="card__tag"></div>
+
+                    <div class="card__tag card__tag--new">new</div>
+
+                    <button class=" button card__button">подробнее</button>
+                </div>
+
+                <div class="kicthens__card card">
+                    <div class="card__img"><img src="img/catalog/4.png" alt="kitchen-photo"></div>
+                    <div class="card__info">
+                        <span class="card__info-name">Bristel PRO</span>
+                        <span class="card__info-price">от 40 215 ₽/м²</span>
+                    </div>
+                    <p class="card__description">Роскошная дворцовая классика</p>
+
+                    <div class="card__tag"></div>
+
+                    <div class="card__tag card__tag--new">new</div>
+
+                    <button class=" button card__button">подробнее</button>
+                </div>
+
+                <div class="kicthens__card card">
+                    <div class="card__img"><img src="img/catalog/3.png" alt="kitchen-photo"></div>
+                    <div class="card__info">
+                        <span class="card__info-name">Bristel PRO</span>
+                        <span class="card__info-price">от 40 215 ₽/м²</span>
+                    </div>
+                    <p class="card__description">Роскошная дворцовая классика</p>
+
+                    <div class="card__tag"></div>
+
+                    <div class="card__tag card__tag--sale">sale</div>
+
+                    <button class=" button card__button">подробнее</button>
+                </div>
+
+                <div class="kicthens__card card">
+                    <div class="card__img"><img src="img/catalog/6.png" alt="kitchen-photo"></div>
+                    <div class="card__info">
+                        <span class="card__info-name">Bristel PRO</span>
+                        <span class="card__info-price">от 40 215 ₽/м²</span>
+                    </div>
+                    <p class="card__description">Роскошная дворцовая классика</p>
+
+                    <div class="card__tag"></div>
+
+                    <div class="card__tag card__tag--hit">hit</div>
+
+                    <button class=" button card__button">подробнее</button>
+                </div>
+
+                <div class="kicthens__card card">
+                    <div class="card__img"><img src="img/catalog/4.png" alt="kitchen-photo"></div>
+                    <div class="card__info">
+                        <span class="card__info-name">Bristel PRO</span>
+                        <span class="card__info-price">от 40 215 ₽/м²</span>
+                    </div>
+                    <p class="card__description">Роскошная дворцовая классика</p>
+
+                    <div class="card__tag"></div>
+
+                    <div class="card__tag card__tag--new">new</div>
+
+                    <button class=" button card__button">подробнее</button>
+                </div>
+
+                <div class="kicthens__card card">
+                    <div class="card__img"><img src="img/catalog/3.png" alt="kitchen-photo"></div>
+                    <div class="card__info">
+                        <span class="card__info-name">Bristel PRO</span>
+                        <span class="card__info-price">от 40 215 ₽/м²</span>
+                    </div>
+                    <p class="card__description">Роскошная дворцовая классика</p>
+
+                    <div class="card__tag"></div>
+
+                    <div class="card__tag card__tag--sale">sale</div>
+
+                    <button class=" button card__button">подробнее</button>
+                </div>
+
+                <div class="kicthens__card card">
+                    <div class="card__img"><img src="img/catalog/6.png" alt="kitchen-photo"></div>
+                    <div class="card__info">
+                        <span class="card__info-name">Bristel PRO</span>
+                        <span class="card__info-price">от 40 215 ₽/м²</span>
+                    </div>
+                    <p class="card__description">Роскошная дворцовая классика</p>
+
+                    <div class="card__tag"></div>
+
+                    <div class="card__tag card__tag--hit">hit</div>
+
+                    <button class=" button card__button">подробнее</button>
+                </div>
+
+
+            </div>
+            <!-- /.container cards__container -->
+        </div>
+        <!-- /.more__kitchens -->
+    </section>
+
+    <section class="info">
+        <div class="container info__container">
+            <div class="info__card">
+                <h3 class="info__card-title">100 салонов</h3>
+                <p class="info__card-text">70 салонов в России
+                    и 30 в Казахстане, Украине и Беларусь.</p>
+            </div>
+
+            <div class="info__card">
+                <h3 class="info__card-title">Рассрочка 2 года</h3>
+                <p class="info__card-text">Удобная рассрочка оплаты
+                    на 2 года без процентов</p>
+            </div>
+
+            <div class="info__card">
+                <h3 class="info__card-title">Свое производство</h3>
+                <p class="info__card-text">Производство 60 тыс. м² в Зеленограде. 600 сотрудников и 69 тыс. заказов с
+                    1991 г.</p>
+            </div>
+
+            <div class="info__card">
+                <h3 class="info__card-title">Гарантия 24 месяца</h3>
+                <p class="info__card-text">2 года сервисного обслуживания всего кухонного гарнитура KUCHENBERG </p>
+            </div>
+        </div>
+        <!-- /.container info__container -->
+    </section>
+    <!-- ./info -->
+
+    <section class="leader">
+        <div class="leader__container">
+
+            <div class="leader__card">
+                <h2 class="leader__card-title">Кухни на заказ в салонах
+                    Кухнисити
+                </h2>
+                <p class="leader__card-text">Кухня – одно из самых важных помещений в доме. Здесь готовят еду,
+                    устраивают семейные обеды, дружеские посиделки, а порой и званые вечера. Отсюда вытекают главные
+                    критерии выбора мебели – материалы и фурнитура (от покрытия столешницы и заканчивая ручками на
+                    фасадах) должны быть готовы к интенсивным нагрузкам, а продуманная планировка должна помогать
+                    выполнять бытовые дела с легкостью, комфортом и удовольствием. А еще хочется, чтобы было красиво!
+                </p>
+
+                <div class="leader__expand-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aliquam cupiditate beatae, illum
+                        nihil quibusdam excepturi molestias officiis saepe optio quae itaque, aperiam error possimus
+                        quam neque exercitationem voluptatibus delectus.</p>
+                </div>
+                <button class="leader__card-button">раскрыть</button>
+            </div>
+
+
+            <div class="leader__user user">
+                <div class="leader__user-photo user-photo"><img src="img/leader/leader-user-photo.jpg" alt="user"></div>
+
+                <div class="leader__user-info">
+
+                    <strong class="leader__user-name user-name">Андрей Селиванов</strong>
+
+                    <span class="leader__user-job user-job">руководитель производства</span>
+
+                    <div class="leader__user-sign user-sign"><img src="img/leader/leader-user-sign.png" alt=""></div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.leader__container -->
+    </section>
+    <!-- /.leader -->
+
+
+    <section class="list">
+        <div class="container list__container">
+            <div class="list__card">
+                <h4 class="list__card-title">Кухни</h4>
+                <a href="#" class="list__card-item">Каталог Стиль</a>
+                <a href="#" class="list__card-item">Фасад</a>
+                <a href="#" class="list__card-item">Покрытие</a>
+                <a href="#" class="list__card-item">Планировка</a>
+                <a href="#" class="list__card-item">Цвет</a>
+                <a href="#" class="list__card-item">Размер</a>
+                <a href="#" class="list__card-subtitle">Акции</a>
+            </div>
+
+            <div class="list__card">
+                <h4 class="list__card-title">Сопутствующие товары</h4>
+                <a href="#" class="list__card-item">Столешницы</a>
+                <a href="#" class="list__card-item">Бытовая техника</a>
+                <a href="#" class="list__card-item">Шкафы-купе</a>
+                <a href="#" class="list__card-item">Столовые группы</a>
+                <a href="#" class="list__card-item">Барны опоры</a>
+                <a href="#" class="list__card-item"> Аксессуары</a>
+                <a href="#" class="list__card-subtitle">Распродажа<a>
+            </div>
+
+            <div class="list__card">
+                <h4 class="list__card-title">Покупателям</h4>
+                <a href="#" class="list__card-item">Портфолио</a>
+                <a href="#" class="list__card-item">Доставка</a>
+                <a href="#" class="list__card-item">Рассрочка</a>
+                <a href="#" class="list__card-item">Вызов дизайнера</a>
+                <a href="#" class="list__card-item">Сборка</a>
+                <a href="#" class="list__card-item"> Замер</a>
+                <a href="#" class="list__card-subtitle">Калькулятор кухни</a>
+            </div>
+
+            <div class="list__card">
+                <h4 class="list__card-title">Компания</h4>
+                <a href="#" class="list__card-item">О компании</a>
+                <a href="#" class="list__card-item">Производство</a>
+                <a href="#" class="list__card-item">Новости</a>
+                <a href="#" class="list__card-item">Пресса</a>
+                <a href="#" class="list__card-item">Видео</a>
+                <a href="#" class="list__card-item"> Сотрудничество</a>
+                <a href="#" class="list__card-item"> Вакансии</a>
+                <a href="#" class="list__card-item"> Благотворительность</a>
+                <a href="#" class="list__card-subtitle">Бесплатный дизайн</a>
+            </div>
+
+
+            <div class="list__card">
+                <h4 class="list__card-title">Контакты</h4>
+                <a href="#" class="list__card-item">Адреса салонов</a>
+                <a href="#" class="list__card-item">Офисы салонов</a>
+
+                <div class="contacts list__card-contacts">
+                    <a href="tel:+74991354378" class="contacts__phone">+7 (499) 135-43-78</a>
+                    <span class="contacts__info">Ежедневно с 10.00 до 22.00</span>
+                    <div class="contacts__social">
+                        <a href="#" class="contacts__social-link"><img src="img/list/list-facebook.svg" alt="fb"></a>
+                        <a href="#" class="contacts__social-link"><img src="img/list/list-vk.svg" alt="vk"></a>
+                        <a href="#" class="contacts__social-link"><img src="img/list/list-instagram.svg" alt="inst"></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container list__container -->
+    </section>
+
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__policy">
+                <span class="footer__policy-text">© 2019 КухниСити и Kuchenberg. Все права защищены</span>
+                <a href="#" class="footer__policy-link">Политика конфиденциальности</a>
+            </div>
+
+            <div class="footer__visa">
+                <img src="img/footer-visa.png" alt="visa">
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+
+
+
+<script src="js/main.js"></script>
+
+</html>

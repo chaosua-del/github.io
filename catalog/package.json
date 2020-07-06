@@ -1,0 +1,20 @@
+{
+  "name": "catalog",
+  "version": "1.0.0",
+  "description": "catalog page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dmytro yuhymenko",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1"
+  },
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-tinypng-compress": "^1.2.5",
+    "image-min": "^0.3.2"
+  }
+}

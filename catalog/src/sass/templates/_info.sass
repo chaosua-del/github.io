@@ -1,0 +1,30 @@
+.info
+  &__container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    padding: 112px 0 203px 0
+  &__card
+    position: relative
+    flex-basis: 21%
+    @include averta
+    &::before
+      content: ''
+      // display: inline-block
+      position: absolute
+      width: 1px
+      height: 128px
+      background-color: rgba(50, 50, 50, 0.08)
+      
+      top: 0
+      left: -25px
+    &-title
+      letter-spacing: 0.105em
+      text-transform: uppercase
+      color: #131313
+      font-size: 28px
+      margin-bottom: 17px
+    &-text
+      font-size: 16px
+      color: #868686

@@ -1,0 +1,75 @@
+.leader
+  background-color: #F2F2F2
+  &__container
+    position: relative
+    width: 96%
+    max-width: 1920px
+    margin: 0 auto
+    padding-top: 11px
+    padding-bottom: 226px
+    // padding-left: 60px
+  &__card
+    &-title
+      letter-spacing: -0.025em
+      color: #141414
+      font-size: 87px
+      max-width: 833px
+      margin-bottom: 98px
+      @include cormorant
+    &-text
+      max-width: 718px
+      letter-spacing: 0.035em
+      color: #666666
+      font-size: 20px
+      line-height: 28px
+      @include averta
+    &-button
+      font-size: 28px
+      letter-spacing: 0.105em
+      text-transform: uppercase
+      color: #000000
+      margin-top: 30px
+      @include non-button
+      @include averta
+      &::after
+        content: url('../img/leader/leader-expand.svg')
+        display: inline-block
+        margin-left: 22px
+        transition: all 0.2s ease-in
+    
+  &__user
+    top: -80px
+    right: -2%
+    &-info
+      position: relative
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+      width: 100%
+    &-name
+      font-size: 28px
+      margin-right: 47px
+      letter-spacing: 3px
+    &-job
+      margin-top: 21px
+      margin-right: 52px
+    &-sign
+      position: absolute
+      left: 0
+      top: 34px
+
+  &__expand
+    &-content
+      max-width: 718px
+      max-width: 718px
+      letter-spacing: 0.035em
+      color: #666666
+      font-size: 20px
+      max-height: 0
+      overflow: hidden
+      transition: max-height 0.2s ease-out
+      @include averta
+   
+.leader__card-button--active
+  &::after
+    transform: rotate(180deg)

@@ -1,0 +1,34 @@
+.hero
+  background-color: #FAFAFA
+  &__container
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-top: 40px
+    padding-bottom: 41px
+  &__navigation
+    display: flex
+    align-items: center
+    &-link
+      @include averta
+      @include non-link(#131313)
+  &__title
+    font-size: 87px
+    color: #272727
+    margin-top: 23px
+    margin-bottom: 25px
+    text-transform: uppercase
+    @include cormorant
+  &__info
+    font-size: 20px
+    display: flex
+    align-items: center
+    @include averta
+    &-text
+      color: #212121
+    &-number
+      color: #ffffff
+      border-radius: 26px
+      padding: 4px 12px      
+      background-color: $red
+      margin: 0 5px

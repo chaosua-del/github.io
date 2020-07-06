@@ -1,0 +1,73 @@
+.nav
+  color: #333333
+  font-size: 16px
+  background-color: rgba(#F0F0F0, 0.88 )
+  letter-spacing: -0.5px
+  @include averta
+  &__location
+    display: flex
+    align-items: center
+    cursor: pointer
+    margin-right: 103px
+    &::before
+      content: ''
+      height: 7px
+      width: 7px
+      background-color: $red
+      border-radius: 50%
+      margin-right: 11px 
+    &::after
+      content: url('../img/dropdown-arrow.svg')
+      margin-left: 6px
+      padding-bottom: 2px
+  &__container
+    padding: 24px 5px 15px 5px
+    @include flex-between
+  &__list
+    &-item
+      margin-right: 53px
+  &__list-item, &__email, &__contacts-phone
+    @include non-link(#333333)
+  &__email
+  &__contacts
+    &-button
+      color: #333333
+      margin-left: 79px
+      margin-right: 22px
+      @include non-button
+      @include averta
+ 
+    
+     
+.main
+  &__container
+    position: relative
+    padding-top: 55px
+    padding-bottom: 55px
+    @include flex-between
+  &__logo
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+  &__link, &__button
+    font-size: 20px
+    text-transform: uppercase
+    letter-spacing: 2px
+    @include averta
+  &__link
+    @include non-link(#2B2B2B)
+    &::before
+      content: url('../img/header/header-burger.svg')
+      margin-right: 28px
+  &__button 
+    color: #1b1b1b
+    border-bottom: 1px solid rgba(21, 21, 21, 0.22) !important
+    padding-left: 0
+    padding-right: 0
+    margin-top: -7px
+    margin-right: -14px
+    transition: color 0.1s ease-in
+    @include non-button
+    &:hover
+      color: #5F5F5F
