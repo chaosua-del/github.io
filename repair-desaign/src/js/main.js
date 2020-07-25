@@ -13,7 +13,7 @@ $(document).ready(function () {
 
 
   // on click we toggle class for modal 
-  modalBtn.on('click', function () {
+  modalBtn.on('function ()click', () => {
     modal.show();
   });
 
