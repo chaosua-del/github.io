@@ -30,12 +30,20 @@
    * Project: [saytspb](https://chaosua-del.github.io/saytspb/src/), [code](https://github.com/chaosua-del/chaosua-del.github.io/tree/master/saytspb/src) - Built on Html and CSS using Sass preprocessor.
    * Project: [Brume-interior](https://chaosua-del.github.io/interiors/src/), [code](https://github.com/chaosua-del/chaosua-del.github.io/tree/master/interiors/src) - Built on Html and CSS using Sass preprocessor, using Bootstrap library.
    * Project: [Lift-Up](http://www.lift-up.com.ua/), [code](https://github.com/chaosua-del/chaosua-del.github.io/tree/master/LiftUp/src) - Built on Html and CSS using Sass preprocessor, using Bootstrap library.
+   * Project: [SewingDesign](https://chaosua-del.github.io/sewing-design/dist/), [code](https://github.com/chaosua-del/sewing-design) - Built on Html and Css using Scss, Pug with Gulp and Webpack Toolkits. A lot of js code using jquery and different libraries such as Leaflet.js.
+   * Project: [Kuhnicity](https://chaosua-del.github.io/kuhnicity/dist/), [code](https://github.com/chaosua-del/kuhnicity) - Built on Html and Css using Scss, Pug with Gulp and Webpack Toolkits. A lot of js code using jquery and different libraries such as Leaflet.js.
    
 ### Languages
    * Ukrainian (native)
    * English (I have strong background given by ending of high school with advanced learning of English).
    * Russian (free speaker).
    * Polish (Elementary) - learning it by myself.
+   
+### Experience
+2020 January - 2020 March: Glo academy courses.
+2020 March - 2020 May: Updraging portfolio and freelance.
+2020 May - 2020 September: Riverstart Web-studio as Html&CSS developer.
+Now: Learning React.Js.
   
 ### Additional information
    Also I have ended special web-development courses. Here is [certificate](https://drive.google.com/file/d/1HpwBfupO_wvSvF3E40FNp7C0jQrN4a0r/view?usp=sharing) of successfull gradution
