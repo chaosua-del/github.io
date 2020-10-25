@@ -40,10 +40,10 @@
    * Polish (Elementary) - learning it by myself.
    
 ### Experience
-2020 January - 2020 March: Glo academy courses.
-2020 March - 2020 May: Updraging portfolio and freelance.
-2020 May - 2020 September: Riverstart Web-studio as Html&CSS developer.
-Now: Learning React.Js.
+* 2020 January - 2020 March: Glo academy courses.
+* 2020 March - 2020 May: Updraging portfolio and freelance.
+* 2020 May - 2020 September: Riverstart Web-studio as Html&CSS developer.
+* Now: Learning React.Js.
   
 ### Additional information
    Also I have ended special web-development courses. Here is [certificate](https://drive.google.com/file/d/1HpwBfupO_wvSvF3E40FNp7C0jQrN4a0r/view?usp=sharing) of successfull gradution
