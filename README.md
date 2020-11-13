@@ -26,11 +26,11 @@
   
 ### Code examples/Experience
    
-   * Project: [Repair-Design](https://chaosua-del.github.io/repair-desaign/src/), [code](https://github.com/chaosua-del/chaosua-del.github.io/tree/master/repair-desaign/src) - Built on Html and CSS using Sass preprocessor.
-   * Project: [Alpha](https://chaosua-del.github.io/alpha/src/), [code](https://github.com/chaosua-del/alpha/tree/main/src) - Built on Html and CSS using Sass preprocessor and Bootstrap.
-   * Project: [Lift-Up](http://www.lift-up.com.ua/), [code](https://github.com/chaosua-del/chaosua-del.github.io/tree/master/LiftUp/src) - Built on Html and CSS using Sass preprocessor, using Bootstrap library.
-   * Project: [SewingDesign](https://chaosua-del.github.io/sewing-design/dist/), [code](https://github.com/chaosua-del/sewing-design) - Built on Html and Css using Scss, Pug with Gulp and Webpack Toolkits. A lot of js code using jquery and different libraries such as Leaflet.js.
-   * Project: [Kuhnicity](https://chaosua-del.github.io/kuhnicity/dist/), [code](https://github.com/chaosua-del/kuhnicity) - Built on Html and Css using Scss, Pug with Gulp and Webpack Toolkits. A lot of js code using jquery and different libraries such as Leaflet.js.
+   * Project: [Repair-Design](https://chaosua-del.github.io/repair-desaign/src/) --- [code](https://github.com/chaosua-del/chaosua-del.github.io/tree/master/repair-desaign/src) - Built on Html and CSS using Sass preprocessor.
+   * Project: [Alpha](https://chaosua-del.github.io/alpha/src/) --- [code](https://github.com/chaosua-del/alpha/tree/main/src) - Built on Html and CSS using Sass preprocessor and Bootstrap.
+   * Project: [Lift-Up](http://www.lift-up.com.ua/) --- [code](https://github.com/chaosua-del/chaosua-del.github.io/tree/master/LiftUp/src) - Built on Html and CSS using Sass preprocessor, using Bootstrap library.
+   * Project: [SewingDesign](https://chaosua-del.github.io/sewing-design/dist/) --- [code](https://github.com/chaosua-del/sewing-design) - Built on Html and Css using Scss, Pug with Gulp and Webpack Toolkits. A lot of js code using jquery and different libraries such as Leaflet.js.
+   * Project: [Kuhnicity](https://chaosua-del.github.io/kuhnicity/dist/) --- [code](https://github.com/chaosua-del/kuhnicity) - Built on Html and Css using Scss, Pug with Gulp and Webpack Toolkits. A lot of js code using jquery and different libraries such as Leaflet.js.
    
 ### Languages
    * Ukrainian (native)
